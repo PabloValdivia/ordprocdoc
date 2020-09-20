@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="one.stabilis.ordprocdoc.CreateInoutFromOrder"
+         name="one.stabilis.ordprocdoc.CreateInoutFromOrder"
+         point="org.adempiere.base.Process">
+      <process
+            class="one.stabilis.ordprocdoc.CreateInoutFromOrder"
+            priority="2">
+      </process>
+   </extension>
+   <extension
+         id="one.stabilis.ordprocdoc.CreateInvoiceFromOrder"
+         name="one.stabilis.ordprocdoc.CreateInvoiceFromOrder"
+         point="org.adempiere.base.Process">
+      <process
+            class="one.stabilis.ordprocdoc.CreateInvoiceFromOrder"
+            priority="2">
+      </process>
+   </extension>
+
+</plugin>
