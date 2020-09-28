@@ -61,7 +61,6 @@ public class CreateInvoiceFromOrder extends CustomProcess {
 					squery.getAllDocStatusPairsValueName(sdata.getMOrderStatusID(), getCtx(), get_TrxName()),
 					sdata.getDocAllowedStatusesList()));
 
-			// new Message 'statusWrong' should be added in iD with translations
 			sutil.getAdempiereException(Msg.translate(p_Ctx, mdata.getMessagesList().get(0)) + ": " + allowedDocNames);
 			return null;
 		}

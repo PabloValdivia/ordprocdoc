@@ -34,7 +34,6 @@ public class QueryService implements QueryServiceDao {
 			sqlRefName = "SELECT rf.value, rltrl.name " + sqlRefName + " and rltrl.AD_Language='" + ctxtLang + "' ";
 		else
 			sqlRefName = "SELECT rf.value, rf.name " + sqlRefName;
-		;
 		try {
 			pstmtdsn = DB.prepareStatement(sqlRefName, p_Trx);
 			pstmtdsn.setInt(1, p_MOrderStatusID);
